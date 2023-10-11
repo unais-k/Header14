@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500&family=Urbanist:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00040f",
+
+                    },
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                    },
+                },
+                screens: {
+                    xs: "480px",
+                    ss: "620px",
+                    sm: "768px",
+                    md: "1060px",
+                    lg: "1200px",
+                    xl: "1700px",
+                },
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="w-full overflow-auto bg-[#2F1893] h-screen">
+        <header class="flex justify-center items-center">
+            <div class="max-w-[1100px] w-full mx-auto px-4">
+                <nav class="w-full flex py-6 flex-wrap justify-between items-center navbar">
+                    <div>
+                        <h4 class="font-poppins text-white
+                             font-medium md:text-[28px] text-[34px] w-full">
+                            Start Up 3
+                        </h4>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
+                        class="h-8 w-8 cursor-pointer md:hidden block text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                        <ul class="items-center gap-5 font-medium text-base md:flex md:justify-between md:pt-0">
+                            <li class="font-poppins cursor-pointer text-center text-[18px] md:mt-0 mt-3 text-[#4D4C7D]
+                            ">
+                                Overview
+                            </li>
+                            <li class="font-poppins cursor-pointer text-[18px] md:mt-0 mt-3 text-center text-white
+                            ">
+                                Prices
+                            </li>
+                            <li class="font-poppins cursor-pointer text-[18px] md:mt-0 mt-3 text-white text-center
+                            ">
+                                Blog
+                            </li>
+                            <li class="font-poppins cursor-pointer text-[18px] md:mt-0 mt-3 text-white text-center
+                            ">
+                                Feedback
+                            </li>
+                            <li class="flex justify-center items-center md:mt-0 mt-3">
+                                <button class="bg-[#E93A7D] rounded-full px-5 ms-3 py-2 font-poppins cursor-pointer text-center text-[18px] text-white
+                                ">
+                                    Purchase
+                                </button>
+                            </li>
+                    </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="md:py-10 pb-10 pt-3">
+            <div class="max-w-[1100px] w-full mx-auto">
+                <div class="flex justify-between mx-4 md:flex-row flex-col">
+                    <div class="flex flex-col me-20">
+                        <h2
+                            class="md:text-[58px] text-[46px] md:leading-[70px] leading-[56px] leading-relaxed font-semibold font-poppins text-white">
+                            Generate Awesome Web Pages
+                        </h2>
+                        <p
+                            class="text-[22px] leading-8 mt-3 tracking-wide leading-normal font-medium text-white w-[90%] md:w-[363px] text-start">
+                            The most important part of the Startup is the samples. The samples form a set of 25 usable
+                            pages
+                            you can use as is or you can add new blocks.
+                        </p>
+                        <div class="flex justify-start pt-10 items-center w-full">
+                            <button
+                                class="px-5 text-[18px] font-medium py-3 bg-pink-500 rounded-full cursor-pointer text-white text-center">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto w-full px-6 py-12 bg-white border-0 shadow-lg rounded-xl md:mt-0 mt-5">
+                        <h1 class="text-[42px] leading-[52px] font-bold mb-8 text-[#1E0E62] text-center">Sign Up Now
+                        </h1>
+                        <div class="w-[80%] flex justify-center items-center mx-auto">
+
+                            <form id="form" class="w-full">
+                                <div class="relative z-0 w-full mb-5">
+                                    <input type="text" name="name" placeholder="Your email "
+                                        class="w-full border-2 border-gray-200 ps-5 py-3 rounded-full" />
+                                </div>
+                                <div class="relative z-0 w-full mb-5">
+                                    <input type="password" name="password" placeholder="Your password "
+                                        class="w-full border-2 border-gray-200 ps-5 py-3 rounded-full" />
+                                </div>
+                                <div class="flex justify-start gap-3">
+                                    <input id="checkboxDefault" type="checkbox"
+                                        class="h-[25px] w-[25px] rounded-[0.25rem] border-[0.125rem] border-solid border-gray-200 outline-none accent-[#25DAC5] outline-none">
+                                    <label class="inline-block pl-[0.15rem] hover:cursor-pointer text-gray-400"
+                                        for="checkboxDefault">
+                                        I agree to the Terms of Service.
+                                    </label>
+                                </div>
+                                <button id="button" type="button"
+                                    class="w-full px-6 py-3 my-5 text-lg text-white transition-all duration-150 ease-linear rounded-full shadow outline-none bg-[#482BE7]">
+                                    Sign In
+                                </button>
+                                <div class="flex justify-between items-center">
+                                    <div class="w-full border-b-2 border-gray-200"></div>
+                                    <div class="px-3 w-fit text-gray-300 pb-1 text-[18px]">or</div>
+                                    <div class="w-full border-b-2 border-gray-200"></div>
+                                </div>
+                                <button id="button" type="button"
+                                    class="w-full px-6 py-3 my-5 text-lg text-white transition-all duration-150 ease-linear rounded-full shadow outline-none bg-[#1DA1F2]">
+                                    Log in via Twitter
+                                </button>
+                            </form>
+                        </div>
+                        <div
+                            class="flex justify-center items-center flex-col md:flex-row text-center gap-3 font-medium text-[18px] text-gray-400">
+                            <span>
+                                Do you have an Account?
+                            </span>
+                            <span class="text-[#25DAC5]">
+                                Sign In
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script>
+        const button = document.querySelector('#menu-button');
+        const menu = document.querySelector('#menu');
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+    </script>
+</body>
+
+</html>
